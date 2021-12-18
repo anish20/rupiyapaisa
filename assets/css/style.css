@@ -1883,6 +1883,9 @@ margin: 12px auto 0;
   color: #fff;
 }
 @media (max-width: 575px) {
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
   .profile-item h3{
     font-size: 24px;
     width: 274px;
@@ -1900,6 +1903,26 @@ margin: 12px auto 0;
   .login_wrapper {
     padding: 15px !important;
   }
+}
+
+.joinus_btn{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.joinus_btn a{
+  padding: 8px 40px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff725e;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.joinus_btn a:hover{
+  background-color: #fa9386;
+  color: #010483;
 }
 
 /*
