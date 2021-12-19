@@ -24,6 +24,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <!----Datepicker----->
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -101,13 +103,13 @@
                       
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group i-fname"> <input type="date" class="form-control" required="" id="email" placeholder="Eamil ID *"> </div>
+                        <div class="form-group i-fname"> <input type="text" class="form-control" required="" id="dob" placeholder="Date of Birth *"> </div>
                       
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group i-fname" placeholder="Gender">
-                            <select  id="gender" class="form-control">
-                              <option value="unknown" >Select Gender *</option>
+                        <div class="form-group i-fname" >
+                            <select  id="gender" class="form-control" placeholder="Gender">
+                              <option value="unknown" > Gender *</option>
                               <option value="male">Male</option>
                               <option value="female">Female</option>
                             </select>
@@ -116,6 +118,14 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group i-fname"> <input type="text" class="form-control" required="" id="contact" placeholder="Contact No *"> </div>
+                      
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group i-fname"> <input type="text" class="form-control" required="" id="city" placeholder="City *"> </div>
+                      
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group i-fname"> <input type="text" class="form-control" required="" id="pin_code" placeholder="Pin Code *"> </div>
                       
                       </div>
                       <div class="col-md-6">
@@ -169,33 +179,13 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script>
     $(document).ready(function(){
-
-      $(document).ready(function(){
-      $("#register-form").hide();
-      $("#forgot-form").hide();	
-      $(".register-form-link").click(function(e){
-      $("#login-form").slideUp(0);
-      $("#forgot-form").slideUp(0)	
-      $("#register-form").fadeIn(300);	
-      });
-    
-      $(".login-form-link").click(function(e){
-      $("#register-form").slideUp(0);
-      $("#forgot-form").slideUp(0);	
-      $("#login-form").fadeIn(300);	
-      });
-    
-      $(".forgot-form-link").click(function(e){
-      $("#login-form").slideUp(0);	
-      $("#forgot-form").fadeIn(300);	
-      });
-      });
-    
-      });
+      $("#dob").datepicker();
+    });
   </script>
-  
 </body>
 
 </html>
